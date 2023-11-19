@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View, SafeAreaView, FlatList, TouchableOpacity } from 'react-native';
 import { TextInput } from "react-native";
 
@@ -15,6 +15,11 @@ function Home() {
             setTasks([...tasks, { text: item, done: false }])
             setItem('')
         }
+    }
+
+    const delItem = (id) => {
+        tasks.splice(id,1)
+        setTasks([...tasks])
     }
 
     return (
@@ -34,9 +39,11 @@ function Home() {
                     <FlatList style={styles.flatlist}
                         showsVerticalScrollIndicator={false}
                         data={tasks}
-                        renderItem={({ item }) =>
+                        renderItem={({ item, index }) =>
                             <>
-                                <TouchableOpacity style={styles.items} onPress={null}>
+                                <TouchableOpacity style={styles.items} onPress={()=> {
+                                    delItem(index)
+                                }}>
                                     <View style={{backgroundColor:"#F0A411", height:10, width:10, borderRadius:100, marginLeft:5,marginRight:5}}></View>
                                     <Text>{item.text}</Text>
                                 </TouchableOpacity>
