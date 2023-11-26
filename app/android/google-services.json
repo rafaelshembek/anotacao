@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168269866620",
+    "project_id": "anotacao-e3824",
+    "storage_bucket": "anotacao-e3824.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168269866620:android:35edeea2e59e4d21870bf9",
+        "android_client_info": {
+          "package_name": "com.rafaelsilvagomes.anotacao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA374o9TPPHFFSKYyQOKN4HNUqmtJUYnho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
