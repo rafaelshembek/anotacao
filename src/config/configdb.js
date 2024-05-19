@@ -3,12 +3,12 @@ import {getFirestore, getDocs, collection, addDoc, deleteDoc, doc} from 'firebas
 
 
 const configFireBase = {
-    apiKey: "AIzaSyDycrAgdWEEwCF3CsuFrhUMIo5U8V_E5-4",
-    authDomain: "anotacao-ba88b.firebaseapp.com",
-    projectId: "anotacao-ba88b",
-    storageBucket: "anotacao-ba88b.appspot.com",
-    messagingSenderId: "663770714745",
-    appId: "1:663770714745:web:7bc925a278b742c37ffaa8"
+    apiKey: "**********************************",
+    authDomain: "**********************************",
+    projectId: "**********************************",
+    storageBucket: "**********************************",
+    messagingSenderId: "**********************************",
+    appId: "**********************************"
 }
 
 const Firebase = initializeApp(configFireBase)
